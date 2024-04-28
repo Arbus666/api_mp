@@ -96,7 +96,6 @@ class MainWindow(QMainWindow):
 
     def mousePressEvent(self, event):
         self.remove_focus()
-        # try:
         button = event.button()
         if button == 1:
             pos = event.pos()
@@ -180,7 +179,6 @@ class MainWindow(QMainWindow):
             self.spn = 0.02
             self.update_map()
         except Exception:
-            # по запросу ничего не нашлось
             pass
 
     def remove_point(self, event):
